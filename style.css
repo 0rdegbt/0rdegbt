@@ -290,9 +290,16 @@ hr{
     margin: 50px 38% 100px 32%;
     padding: 50px;
     width: 30%;
-    height: 750px;
+    height: 1000px;
     background-color: rgb(20,20,20);
     box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+#contact-content #email-prompt{
+    font-family: KanitRegular;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(210,210,210);
 }
 
 #contact-content .contact-box{
@@ -317,6 +324,39 @@ hr{
     font-family: KanitRegular;
     font-size: 30px;
     color:rgb(210,210,210);
+}
+
+#contact-email{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact-email #contact-form{
+    font-size: x-large;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#email{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+#button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    background-color: darkslategray;
+    border: 2px solid rgb(210,210,210);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: KanitLight;
+    color: white;
+    font-weight: bold;
 }
 
 #footer{
