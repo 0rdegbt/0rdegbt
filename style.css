@@ -1,0 +1,336 @@
+@font-face {
+    font-family: KanitMedium;
+    src: url(font/Kanit/Kanit-Medium.ttf);
+}
+@font-face {
+    font-family: KanitRegular;
+    src: url(font/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: KanitLight;
+    src: url(font/Kanit/Kanit-Light.ttf);
+}
+
+body{
+    background-image:url(images/sparkle.gif);
+    background-color: #101010;
+}
+
+#page{
+    width:1600px;
+    margin:20px auto 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 25px 0px 25px;
+    height: 80px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+#logo{
+    height:100px;
+    width:100%;
+}
+
+#logo img{
+    margin: 22px 0px 22px 50px;
+    height: 36px;
+}
+
+#menu{
+    margin-right: 40px;
+    width: 1000px;
+    padding: 0;
+    text-align: right;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 8px;
+}
+
+#menu li a{
+    font-family: KanitMedium;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0;
+    color: rgb(210,210,210);
+}
+
+#menu li a:hover{
+    color: rgb(171,38,184);
+    border-bottom: 3px solid rgb(171,38,184);
+}
+
+#menu li #active{
+    border-bottom: 3px solid rgb(171,38,184);
+}
+
+hr{
+    height: 3px;
+    background-color: rgb(242,158,255);
+    border-width: 0px;
+    margin-top: 12px;
+    width: 1550px;
+}
+
+#hrinbox{
+    height: 3px;
+    background-color: rgb(242,158,255);
+    border-width: 0px;
+    width: 100%;
+}
+
+.page-title{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-title img{
+    height: 60px;
+}
+
+#home{
+    margin: 20px 25px 0px 25px;
+    height: 560px;
+    background-image: url(images/mainbg.gif);
+    background-position: center;
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home:after{
+    content:" ";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#home img{
+    width: 30%;
+}
+
+#home h2{
+    color: rgb(210,210,210);
+    z-index: 1;
+    border: 5px solid rgb(210,210,210);
+    padding: 20px 25px 20px 25px;
+    font-family: KanitRegular;
+    font-size: 30px;
+}
+
+#about-title{
+    display: block;
+    padding: 25px;
+}
+
+#about-title #title{
+    display: flex;
+    justify-content: center;
+}
+
+#about-title #title img{
+    height: 60px;
+}
+
+#about-title #photo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#about-title #photo #photobox{
+    padding: 25px;
+    border: 5px solid rgb(210,210,210);
+}
+
+#about-title #photo #photobox img{
+    height: 450px;
+}
+
+#about-content{
+    display: block;
+    padding: 25px 25px 25px 50px;
+    margin: 5px 25px 100px 25px;
+    height: 1700px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+#about-content #greeting{
+    font-family: KanitRegular;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#about-content p{
+    font-family: KanitLight;
+    font-size: large;
+    color: rgb(210,210,210);
+}
+
+.about-content-box{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 20px 40px 20px;
+    height: 200px;
+    background-color: rgb(30,30,30);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+.about-content-box img{
+    height: 200px;
+}
+
+.about-content-box2{
+    margin-left: 20px;
+}
+
+.about-content-box2 .title{
+    font-family: KanitRegular;
+    font-weight: bold;
+    font-size: 100px;
+    border-bottom: 2px solid rgb(171,38,184);
+    padding-bottom: 5px;
+}
+
+#portfolio-content{
+    margin: 25px 0px 100px 27px;
+    padding-top: 25px;
+    padding-right: 75px;
+    display: block;
+    width: 1472px;
+    height: 1500px;
+    background-color: rgb(30,30,30);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+#portfolio-content #port-intro{
+    text-align:center;
+    font-family: KanitRegular;
+    font-size: 25px;
+    color: rgb(210,210,210);
+}
+
+#portfolio-content .port-title{
+    margin-left: 50px;
+    padding-left: 5px;
+    border-left: 5px solid rgb(255,61,103);
+    text-align: left;
+    font-family: KanitMedium;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(210,210,210);
+}
+
+#portfolio-content .port-imgs{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+}
+
+.port-box{
+    width: 400px;
+    height: 600px;
+    padding: 25px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+.port-container{
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-container img{
+    height: 600px;
+}
+
+.port-box2{
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+.port-container2{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-container2 img{
+    height: 400px;
+}
+
+#contact-content{
+    display: block;
+    margin: 50px 38% 100px 32%;
+    padding: 50px;
+    width: 30%;
+    height: 750px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+}
+
+#contact-content .contact-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact-container{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.contact-container img{
+    width: 150px;
+    height: 150px;
+}
+
+.contact-info{
+    margin-left:50px;
+    font-family: KanitRegular;
+    font-size: 30px;
+    color:rgb(210,210,210);
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 25px 0px 25px;
+    position: fixed;
+    bottom: 0;
+    width: 1520px;
+    height: 50px;
+    background-color: rgb(20,20,20);
+    box-shadow: 5px 5px 5px rgb(12,12,12);
+    font-family: KanitLight;
+    color: rgb(210,210,210);
+    padding-left: 30px;
+    align-items: center;
+}
